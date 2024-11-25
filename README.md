@@ -1,4 +1,4 @@
-# 32Bit_ALU Simulation
+# Ex3: 32Bit_ALU Simulation
 
 # Aim: 
 
@@ -59,6 +59,8 @@ source /cadence/install/cshrc (mention the path of the tools)
 (The path of cshrc could vary depending on the installation destination)
       
 After this you can see the window like below 
+![WhatsApp Image 2024-11-21 at 22 03 03_8f22541b](https://github.com/user-attachments/assets/57ac357b-ae75-4937-b0b6-f4c4aa1fd6e5)
+
 
 ### Fig 2: Invoke the Cadence Environment
 
@@ -72,14 +74,21 @@ or
 
 
 It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple Step .
+![WhatsApp Image 2024-11-21 at 22 03 05_94df9c3f](https://github.com/user-attachments/assets/1b5f8d48-c16d-4c4a-88b9-5a2d3023bbe2)
+
 
 ### Fig 3: Setting Multi-step simulation
 
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure 
 
 Click the cds.lib file and save the file by clicking on Save option 
+![WhatsApp Image 2024-11-21 at 22 03 04_77efd9d9](https://github.com/user-attachments/assets/5054425c-e094-429a-a973-562d17957caf)
+
 
 ### Fig 4:cds.lib file Creation
+![377372544-d5202b97-ee5c-4e0e-9eaf-5f3fa733e546](https://github.com/user-attachments/assets/7a0fd04a-2469-4d15-86b2-49361278b44e)
+
+
 
 Save cds.lib file and select the correct option for cds.lib file format based on the HDL Language and Libraries used. 
 
@@ -89,7 +98,7 @@ We are simulating verilog design without using any libraries
 
 A Click “OK” in the “nclaunch: Open Design Directory” window as shown in below figure 
 
-![image](https://github.com/user-attachments/assets/d5202b97-ee5c-4e0e-9eaf-5f3fa733e546)
+
 
 ### Fig 5: Selection of Don’t include any libraries
 
@@ -100,8 +109,11 @@ Left side you can see the HDL files. Right side of the window has worklib and sn
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation .
 
 To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation. 
+![WhatsApp Image 2024-11-21 at 22 03 03_6ad63674](https://github.com/user-attachments/assets/dc279163-b720-48ce-80fe-1340d70bce4e)
+
 
 ### Fig 6: Nclaunch Window
+
 
 ## Step 1: Compilation:
 
@@ -124,6 +136,8 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 Left side select the file and in Tools : launch verilog compiler with current selection will get enable. Click it to compile the code 
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation 
+![WhatsApp Image 2024-11-21 at 22 03 03_6ad63674](https://github.com/user-attachments/assets/ee9bed52-e092-4609-a3c9-d957e4b1d0ef)
+
 
 ### Fig 7: Compiled database in worklib
 
@@ -158,6 +172,8 @@ Outputs: Elaborate database updated in mapped library if successful, generates r
 5.It also establishes net connectivity and prepares all of this for simulation
 
 After elaboration the file will come under snapshot. Select the test bench and simulate it.
+![WhatsApp Image 2024-11-21 at 22 03 03_79566764](https://github.com/user-attachments/assets/19e08ccf-18a1-4639-87c5-6f6093f53562)
+
 
 ## Fig 8: Elaboration Launch Option
 
@@ -172,12 +188,18 @@ Outputs: Simulation log file, waveforms for debugging
 Simulation allow to dump design and test bench signals into a waveform 
 
 Steps for simulation – Run the simulation command with simulator options
+![WhatsApp Image 2024-11-21 at 22 03 05_696617ff](https://github.com/user-attachments/assets/00f364a1-7d46-4103-9adc-1a82d3bbee11)
+
 
 ## Fig 9: Design Browser window for simulation
+![WhatsApp Image 2024-11-21 at 22 03 04_22cfb678](https://github.com/user-attachments/assets/923e5d89-30c4-4c7b-ac4a-c74688ab1d6d)
+
 
 ## Fig 10:Simulation Waveform Window
+![WhatsApp Image 2024-11-21 at 22 03 04_22cfb678](https://github.com/user-attachments/assets/978dab81-225d-432a-af71-71fb95da7793)
 
-## Fig 11:Simulation Waveform Window
+
+
 
 ### Result
 
